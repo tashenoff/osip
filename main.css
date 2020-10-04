@@ -1,0 +1,283 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h5{
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+h1{
+    font-weight: 600;
+}
+
+.container{
+    max-width: 1440px;
+    
+}
+
+li{
+    list-style: none;
+}
+
+
+.subtitle{
+    text-align: center;
+    width: 100%;
+    padding-bottom: 20px;
+    color: #2567D8 ;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+}
+
+
+li::before{
+    content: '';
+    display: inline;
+    height: 100%;
+    background-image: url(chek.png);
+    background-repeat: no-repeat;
+    padding: 0 16px;
+    width: 100%;
+}
+
+
+.content-head{
+    width: 100%;
+    text-align: center;
+    position: relative;
+    color: #2567D8;
+    
+    
+}
+
+
+
+@media only screen and (max-device-width: 480px) {
+    h1{
+       font-size: 24px;
+    }
+
+    .content-head::after,::before{
+        width: 20%!important;
+
+    }
+
+    .subtitle{
+        font-size: 14px;
+    }
+}
+
+.content-head::after{
+    content: '';
+    border: 1px solid #2567D8;
+    width: 35%;
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+}
+
+.content-head::before{
+    content: '';
+    border: 1px solid #2567D8;
+    width: 35%;
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+}
+
+
+ul.item-block{
+    padding-left: 0;
+    padding: 13px;
+}
+
+.nav{
+    background-color: #2567D8;
+    height: 76px;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .nav{
+        height: 100%;
+    }
+}
+
+.nav-wrap{
+    max-width: 1440px;
+    width: 100%;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .nav-wrap{
+       flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .top-button{
+        position: absolute;
+        top: 10px;
+        right: 8px;
+    }
+}
+
+ul.right-el{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    width: 100%;
+    padding-left: 0;
+
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    ul.right-el{
+        padding: 20px;
+    }
+}
+
+ul.right-el li  {
+    display: block;
+    height: 29px;
+    margin-right: 16px;
+    margin-left: 16px;
+    padding-left: 52px;
+    background-repeat: no-repeat;
+  
+}
+
+ul.right-el li::before{
+    background: none;
+    padding:none;
+    content: none;
+}
+
+
+.phone{
+    background-image: url('mail.svg');
+}
+
+.mail{
+    background-image: url('phone.svg');
+    
+}
+
+.nav-right{
+   
+    
+    display: flex;
+    align-items: center;
+    color: white;
+    
+}
+
+.nav-left{
+    margin-right: auto;
+
+}
+
+.btn-primary{
+    background-color: #F69E35;
+}
+
+.btn-primary:hover{
+    background-color: #E38618;
+    
+}
+
+.btn-primary:active{
+    background-color: #E38618;
+}
+
+
+.btn-primary:not(:disabled):not(.disabled).active, .btn-primary:not(:disabled):not(.disabled):active, .show>.btn-primary.dropdown-toggle{
+    background-color: #E38618;
+}
+
+
+.item{
+    display: flex;
+    width: 20%;
+    border: 1px solid white;
+    flex-direction: column;
+    line-height: 2;
+    font-size: 15px;
+    /* min-height: 62vh; */
+    /* position: relative; */
+}
+
+
+@media only screen and (max-device-width: 480px) {
+    .item{
+    width: 100%; 
+    padding-bottom: 20px;
+    }
+}
+
+
+
+.item:hover .item-head{
+    background-color:#4787f5;
+}
+
+.item-body{
+   
+    align-items: stretch;
+    height: 100%;
+    margin: 8px 0;
+    border: 1px solid rgb(37 103 216 / 21%);
+}
+
+.item-head{
+    background-color: #2567D8;
+    padding: 25px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    align-items: stretch;
+    justify-content: center;
+    
+}
+
+.item-footer{
+    background-color: #F69E35;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    /* position: absolute; */
+    width: 100%;
+    bottom: 0;
+}
+
+footer{
+    background-color: #2567D8;
+    height: 94px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.text-head{
+    width: 100%;
+    text-align: center;
+}
