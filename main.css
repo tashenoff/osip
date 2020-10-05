@@ -213,7 +213,7 @@ ul.right-el li::before{
     width: 20%;
     border: 1px solid white;
     flex-direction: column;
-    line-height: 2;
+    line-height: 1.6;
     font-size: 15px;
     /* min-height: 62vh; */
     /* position: relative; */
@@ -248,7 +248,7 @@ ul.right-el li::before{
     text-align: center;
     color: white;
     text-transform: uppercase;
-    height: 100px;
+    height: 130px;
     display: flex;
     align-items: center;
     align-items: stretch;
